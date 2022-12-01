@@ -1,0 +1,48 @@
+:root {
+    --augenland-primary-color: #155d8a;
+    --augenland-ordinary-white: #FFF;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.page-container {
+    /* min-height always overrides height and max-height */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-primary {
+    background-color: var(--augenland-primary-color);
+    color: var(--augenland-ordinary-white);
+    text-decoration: none;
+    padding: .8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: rgba(21, 93, 138, .8);
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        width: 80%;
+        height: auto;
+    }
+
+    .logo-link {
+        text-align: center;
+    }
+}
